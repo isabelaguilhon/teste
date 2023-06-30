@@ -1,0 +1,477 @@
+/* Estilos para o cabeçalho */
+  
+  header {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  main{
+    margin: 0;
+    width: 100%;
+  }
+  body{
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  header img {
+    height: 40px; /* Defina a altura desejada para o logo */
+    margin-right: 120px; /* Adicione margem à direita, se necessário */
+  }
+  
+ 
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  nav li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  nav li a:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilos para o conteúdo principal */
+  main {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  h1{
+    font-weight: bolder;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    width: 100%;
+  }
+
+  .image-container {
+    position: relative;
+  }
+  
+  .background-image {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(caminho/para/a/imagem/de/fundo.jpg);
+    background-size: cover;
+    z-index: -1;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(61, 92, 158);
+    font-size: 36px;
+    padding: 10px;
+  }
+
+  .title-overlay {
+    position:absolute;
+    bottom: 76%;
+    left: 54.4%;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(to right, rgb(175, 82, 82), rgb(100, 84, 119));
+    padding: 10px;
+    padding-right: 200px;
+    width: 30%;
+  }
+
+  .image-container {
+    text-align: left;
+  }
+  
+  .text-block {
+    background-color: #393e81;
+    color: white;
+    width: 50%;
+    padding: 20px;
+    padding-bottom: 60px;
+    padding-left: 50px;
+    float: right;
+  }
+  
+  .text-block h2 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .text-block p {
+    font-size: 12px;
+    width: 50%;
+    color: #ffffff;
+    line-height: 1.5;
+  }
+
+  .blue-block {
+    background-color: rgb(107, 113, 168);
+    width: 50%;
+    height: 394px;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    width: 50%;
+    grid-gap: 8px;
+    justify-items: center;
+    align-items: center;
+    margin-left: 25%;
+   
+  }
+  
+  .image-item {
+    text-align: center;
+    margin: 0;
+  }
+  
+  .image-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+  }
+  
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  .saiba-mais {
+    position: absolute;
+    font-size: 8px;
+    width: 50%;
+    bottom: 30px;
+    right: 5px;
+    left: 45%;
+    background-color: rgb(209, 78, 78);
+    color: white;
+    border: none;
+    border-radius: 16px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .depoimentos {
+    background-color: #8f94da;
+    color: #ffffff;
+    padding: 24px;
+  }
+  
+  .carousel-container {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin: 20px auto;
+    width: 40%;
+  }
+  
+  .carousel {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-item.active {
+    transform: translateX(0);
+  }
+  
+  .carousel-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    justify-content: space-between;
+  }
+  
+  .carousel-navigation button {
+    background-color:#32466300;
+    color: #fff;
+    width: 200px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .cursos {
+    background-color: #6362a7;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .cursos h3 {
+    color: #333;
+  }
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    margin-left: 25%;
+    width: 50%;
+  }
+  
+  .card {
+    display: flex;
+    background-color: #324663;
+    padding: 15px;
+    border-radius: 12px;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center
+  }
+  
+  .saber-mais {
+    background-color: #ffffff;
+    color: #c92b2b;
+    width: 50%;
+    margin-left: 50px;
+    border: none;
+    border-radius: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    cursor: pointer;
+  }
+
+
+/* Estilos específicos para o formulário */
+.formulario {
+    padding: 20px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50%;
+  }
+  
+  .formulario h1 {
+    color: #333;
+    text-align: left;
+  }
+  
+  .formulario form {
+    width: 100%;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    text-align: left;
+    width: 70%;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Drop shadow suave */
+  }
+  
+  input[type="text"]::placeholder,
+  input[type="email"]::placeholder,
+  input[type="tel"]::placeholder {
+    color: #292929;
+  }
+  
+  button[type="submit"] {
+    background-color: #5f6cb8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    width: 30%;
+    border-radius: 16px;
+  }
+  
+  
+  
+  /* Resto do CSS para os botões... */
+    
+  
+  .button-container {
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    width: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: left;
+  }
+  
+  .button-container button {
+    margin: 10px;
+  }
+  
+  
+  
+  /* Estilos para o formulário de contato */
+  form {
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  h3 {
+    color: #333;
+    font-size: 18px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  button {
+    display: block;
+    border-radius: 8px;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .button1{
+    background-color: #4c7aaf;
+    
+  }
+
+  .button2{
+    background-color: #cc4646;
+    width: 100%;
+  }
+
+  .button3{
+    background-color: #cc4646;
+    border-radius: 16px;
+    width: 30%;
+  }
+  
+  button:hover {
+    background-color: #8a8a8a;
+  }
+  
+  /* Estilos para o rodapé */
+  /* Estilos para o restante da página */
+
+/* Estilos específicos para o footer */
+footer {
+    background-color: #ffffff;
+    color: #3a3a3a;
+    padding: 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #363636;
+  }
+  
+  .logo img {
+    width: 120px;
+  }
+  
+  .footer-column {
+    width: calc(25% - 20px);
+    margin: 10px;
+    color: #363636;
+  }
+  
+  h4 {
+    margin-bottom: 10px;
+    color: #363636;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #363636;
+  }
+  
+  li {
+    margin-bottom: 5px;
+    color: #363636;
+  }
+  
+  a {
+    color: #363636;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  iframe{
+    margin-left: 75%;
+  }
+  
+  
+  
